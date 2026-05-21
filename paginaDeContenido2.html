@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacer Pedido - Taza & Letras</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=Playfair+Display:ital,wght@0,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav gap-4 text-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+                <li class="nav-item"><a class="nav-link active" href="pedido.html">PEDIDO</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+            <div class="form-container">
+                <h2 class="font-title text-center mb-4" style="color: var(--accent-gold); font-family: var(--font-title); font-size: 2.5rem;">Prepara tu Orden</h2>
+                <p class="text-center text-white-50 mb-5">Completa los campos y enviaremos tu pedido directo a la barra.</p>
+
+                <form action="#" method="POST">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" placeholder="Ej. Juan Pérez" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label class="form-label">Teléfono de Contacto</label>
+                            <input type="tel" class="form-control" placeholder="Ej. 5512345678" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label class="form-label">¿Qué vas a tomar?</label>
+                            <select class="form-select" required>
+                                <option value="" selected disabled>Selecciona una opción...</option>
+                                <option value="capuccino">Capuccino Italiano - $55</option>
+                                <option value="moka">Moka Letras - $65</option>
+                                <option value="espresso">Espresso Americano - $40</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label class="form-label">Tipo de Entrega</label>
+                            <select class="form-select" required>
+                                <option value="barra">Consumo en Sucursal</option>
+                                <option value="llevar">Para Llevar</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Notas o Instrucciones Especiales</label>
+                            <textarea class="form-control" rows="3" placeholder="Ej. Leche deslactosada, sin azúcar, etc..."></textarea>
+                        </div>
+                        <div class="col-12 text-center mt-4">
+                            <button type="submit" class="btn btn-order w-100 py-3">CONFIRMAR PEDIDO</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>
