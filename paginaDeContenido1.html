@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Taza & Letras</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        body { background-color: var(--bg-warm-coffee); color: white; }
+        .menu-card {
+            background-color: var(--bg-dark-chocolate);
+            border: 1px solid rgba(230, 197, 125, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .menu-card:hover { transform: translateY(-5px); }
+        .nav-tabs .nav-link { color: white; font-family: var(--font-menu); }
+        .nav-tabs .nav-link.active {
+            background-color: var(--accent-gold);
+            color: var(--bg-dark-chocolate) !important;
+            border-color: var(--accent-gold);
+        }
+        .price { color: var(--accent-gold); font-family: var(--font-menu); font-size: 1.4rem; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav gap-4 text-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link active" href="menu.html">MENU</a></li>
+                <li class="nav-item"><a class="nav-link" href="pedido.html">PEDIDO</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="brand-subtitle" style="font-size: 4rem;">Nuestra Carta</h1>
+        <p class="lead">Acompaña tu lectura con nuestras especialidades</p>
+    </div>
+
+    <ul class="nav nav-tabs justify-content-center mb-4" id="menuTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="cafes-tab" data-bs-toggle="tab" data-bs-target="#cafes" type="button" role="tab">Cafés</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="reposteria-tab" data-bs-toggle="tab" data-bs-target="#reposteria" type="button" role="tab">Repostería</button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="menuTabsContent">
+        <div class="tab-pane fade show active" id="cafes" role="tabpanel">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title text-gold" style="color: var(--accent-gold);">Capuccino Italiano</h5>
+                            <p class="card-text text-white-50">Espresso balanceado con leche vaporizada y una fina capa de espuma cremosa.</p>
+                            <span class="price">$55.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Moka Letras</h5>
+                            <p class="card-text text-white-50">Nuestro espresso clásico con chocolate oscuro artesanal y un toque de canela.</p>
+                            <span class="price">$65.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="reposteria" role="tabpanel">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Tartaleta de Frutos Rojos</h5>
+                            <p class="card-text text-white-50">Base crujiente de mantequilla rellena de crema pastelera y frutos de temporada.</p>
+                            <span class="price">$48.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

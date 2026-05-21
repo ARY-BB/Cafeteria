@@ -1,0 +1,68 @@
+/* Variables de color basadas en tu imagen */
+:root {
+    --bg-dark-chocolate: #1c1514;
+    --bg-warm-coffee: #735449;
+    --accent-gold: #e5c17d;
+    --font-menu: 'Barlow Condensed', sans-serif;
+    --font-title: 'Playfair Display', serif;
+    --font-slogan: 'Great Vibes', cursive;
+}
+
+/* --- NAVBAR --- */
+.custom-navbar {
+    background-color: var(--bg-dark-chocolate) !important;
+    padding: 1rem 0;
+}
+
+.custom-navbar .nav-link {
+    font-family: var(--font-menu);
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: var(--accent-gold) !important;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    background-color: var(--bg-warm-coffee);
+    /* Si tienes círculos difuminados de fondo como la imagen, puedes usar gradientes circulares: */
+    background-image: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.08) 0%, transparent 40%),
+    radial-gradient(circle at 10% 80%, rgba(0,0,0,0.15) 0%, transparent 30%);
+    min-height: 85vh;
+    padding: 3rem 0;
+}
+
+/* Tipografías del Logo/Marca */
+.brand-title {
+    font-family: var(--font-title);
+    font-size: 4.5rem;
+    color: #4a332c; /* Tono marrón oscuro del texto "Taza" */
+    margin-bottom: -1.5rem; /* Ajuste para encimar ligeramente las letras */
+}
+
+.brand-subtitle {
+    font-family: var(--font-title);
+    font-size: 5.5rem;
+    font-style: italic;
+    color: var(--accent-gold);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.brand-slogan {
+    font-family: var(--font-slogan);
+    font-size: 2.2rem;
+    color: #ffffff;
+    opacity: 0.9;
+    margin-top: 1rem;
+}
+
+/* Animación sutil para la taza de café */
+.hero-img {
+    max-height: 400px;
+    filter: drop-shadow(5px 5px 15px rgba(0,0,0,0.3));
+}
