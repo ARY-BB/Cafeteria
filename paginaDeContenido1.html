@@ -6,22 +6,6 @@
     <title>Menú - Taza & Letras</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-    <style>
-        body { background-color: var(--bg-warm-coffee); color: white; }
-        .menu-card {
-            background-color: var(--bg-dark-chocolate);
-            border: 1px solid rgba(230, 197, 125, 0.2);
-            transition: transform 0.3s ease;
-        }
-        .menu-card:hover { transform: translateY(-5px); }
-        .nav-tabs .nav-link { color: white; font-family: var(--font-menu); }
-        .nav-tabs .nav-link.active {
-            background-color: var(--accent-gold);
-            color: var(--bg-dark-chocolate) !important;
-            border-color: var(--accent-gold);
-        }
-        .price { color: var(--accent-gold); font-family: var(--font-menu); font-size: 1.4rem; }
-    </style>
 </head>
 <body>
 
@@ -35,7 +19,6 @@
                 <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
                 <li class="nav-item"><a class="nav-link active" href="menu.html">MENU</a></li>
                 <li class="nav-item"><a class="nav-link" href="pedido.html">PEDIDO</a></li>
-
             </ul>
         </div>
     </div>
@@ -47,22 +30,23 @@
         <p class="lead">Acompaña tu lectura con nuestras especialidades</p>
     </div>
 
-    <ul class="nav nav-tabs justify-content-center mb-4" id="menuTabs" role="tablist">
+    <ul class="nav nav-tabs justify-content-center mb-5" id="menuTabs" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="cafes-tab" data-bs-toggle="tab" data-bs-target="#cafes" type="button" role="tab">Cafés</button>
+            <button class="nav-link active" id="cafes-tab" data-bs-toggle="tab" data-bs-target="#cafes-pane" type="button" role="tab" aria-controls="cafes-pane" aria-selected="true">Cafés</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="reposteria-tab" data-bs-toggle="tab" data-bs-target="#reposteria" type="button" role="tab">Repostería</button>
+            <button class="nav-link" id="reposteria-tab" data-bs-toggle="tab" data-bs-target="#reposteria-pane" type="button" role="tab" aria-controls="reposteria-pane" aria-selected="false">Repostería</button>
         </li>
     </ul>
 
     <div class="tab-content" id="menuTabsContent">
-        <div class="tab-pane fade show active" id="cafes" role="tabpanel">
-            <div class="row g-4">
+
+        <div class="tab-pane fade show active" id="cafes-pane" role="tabpanel" aria-labelledby="cafes-tab" tabindex="0">
+            <div class="row g-4 justify-content-center">
                 <div class="col-12 col-md-4">
                     <div class="card menu-card h-100 text-white">
                         <div class="card-body">
-                            <h5 class="card-title font-title text-gold" style="color: var(--accent-gold);">Capuccino Italiano</h5>
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Capuccino Italiano</h5>
                             <p class="card-text text-white-50">Espresso balanceado con leche vaporizada y una fina capa de espuma cremosa.</p>
                             <span class="price">$55.00</span>
                         </div>
@@ -77,25 +61,190 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="tab-pane fade" id="reposteria" role="tabpanel">
-            <div class="row g-4">
                 <div class="col-12 col-md-4">
                     <div class="card menu-card h-100 text-white">
                         <div class="card-body">
-                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Tartaleta de Frutos Rojos</h5>
-                            <p class="card-text text-white-50">Base crujiente de mantequilla rellena de crema pastelera y frutos de temporada.</p>
-                            <span class="price">$48.00</span>
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Espresso Poético</h5>
+                            <p class="card-text text-white-50">Extracción intensa de granos de especialidad con notas sutiles a chocolate amargo y avellana.</p>
+                            <span class="price">$40.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Latte Macchiato</h5>
+                            <p class="card-text text-white-50">Tres capas perfectas: leche caliente, un shot de espresso sedoso y espuma de leche al tope.</p>
+                            <span class="price">$58.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Café de Olla Tradicional</h5>
+                            <p class="card-text text-white-50">Receta artesanal infusionada con piloncillo puro, canela en rama y un toque ligero de clavo.</p>
+                            <span class="price">$45.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Flat White</h5>
+                            <p class="card-text text-white-50">Doble shot de espresso corto combinado con leche vaporizada para una textura densa y aterciopelada.</p>
+                            <span class="price">$60.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Affogato "Crónica"</h5>
+                            <p class="card-text text-white-50">Una bola de helado artesanal de vainilla ahogada en un shot de espresso intensamente caliente.</p>
+                            <span class="price">$65.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Cold Brew Antología</h5>
+                            <p class="card-text text-white-50">Café extraído en frío durante 18 horas para obtener un sabor suave, refrescante y de baja acidez.</p>
+                            <span class="price">$55.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Caramel Intrenso</h5>
+                            <p class="card-text text-white-50">Leche vaporizada con jarabe de vainilla, marcada con espresso y decorada con hilos de caramelo dulce.</p>
+                            <span class="price">$68.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Café Irlandés de la Casa</h5>
+                            <p class="card-text text-white-50">Espresso americano con un toque de crema irlandesa, coronado con crema batida y chispas de chocolate.</p>
+                            <span class="price">$70.00</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="tab-pane fade" id="reposteria-pane" role="tabpanel" aria-labelledby="reposteria-tab" tabindex="0">
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Tartaleta de Frutos Rojos</h5>
+                            <p class="card-text text-white-50">Base crujiente de mantequilla rellena de crema pastelera artesanal y frutos rojos frescos de temporada.</p>
+                            <span class="price">$48.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Cheesecake de New York</h5>
+                            <p class="card-text text-white-50">Clásico pay de queso horneado, cremoso, con costra de galleta graham y coulis de fresa natural.</p>
+                            <span class="price">$55.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Tarta Ópera Literaria</h5>
+                            <p class="card-text text-white-50">Finas capas de bizcocho almendrado embebido en café, ganache de chocolate oscuro y crema de mantequilla al café.</p>
+                            <span class="price">$65.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Brownie con Nuez Fudge</h5>
+                            <p class="card-text text-white-50">Bizcocho de chocolate macizo y húmedo, cargado de trozos de nuez pecana y servido tibio.</p>
+                            <span class="price">$42.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Croissant de Almendras</h5>
+                            <p class="card-text text-white-50">Hojaldre francés crujiente relleno de crema de almendras (frangipane) y espolvoreado con almendras fileteadas.</p>
+                            <span class="price">$46.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Tiramisú Tradicional</h5>
+                            <p class="card-text text-white-50">Soletas italianas impregnadas en espresso e idromiel, intercaladas con una aterciopelada crema de queso mascarpone.</p>
+                            <span class="price">$60.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Muffin de Matcha y Chocolate Blanco</h5>
+                            <p class="card-text text-white-50">Panecillo esponjoso elaborado con té verde matcha orgánico y trozos dulces de chocolate blanco.</p>
+                            <span class="price">$38.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Alfajor de Dulce de Leche</h5>
+                            <p class="card-text text-white-50">Dos galletas suaves de fécula de maíz que se deshacen en la boca, rellenas de abundante dulce de leche y coco rallado.</p>
+                            <span class="price">$35.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Pastel Red Velvet "Poesía"</h5>
+                            <p class="card-text text-white-50">Pan húmedo de sutil cacao color rojo encendido, cubierto por completo con un frosting liso de queso crema.</p>
+                            <span class="price">$58.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card menu-card h-100 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title font-title" style="color: var(--accent-gold);">Macarons Surtidos (3 pzas)</h5>
+                            <p class="card-text text-white-50">Delicadas galletas francesas a base de harina de almendra. Sabores: Pistache, Vainilla Francesa y Café Espresso.</p>
+                            <span class="price">$50.00</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>
