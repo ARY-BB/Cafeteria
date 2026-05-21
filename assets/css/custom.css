@@ -66,3 +66,18 @@
     max-height: 400px;
     filter: drop-shadow(5px 5px 15px rgba(0,0,0,0.3));
 }
+
+body { background-color: var(--bg-warm-coffee); color: white; }
+.menu-card {
+    background-color: var(--bg-dark-chocolate);
+    border: 1px solid rgba(230, 197, 125, 0.2);
+    transition: transform 0.3s ease;
+}
+.menu-card:hover { transform: translateY(-5px); }
+.nav-tabs .nav-link { color: white; font-family: var(--font-menu); }
+.nav-tabs .nav-link.active {
+    background-color: var(--accent-gold);
+    color: var(--bg-dark-chocolate) !important;
+    border-color: var(--accent-gold);
+}
+.price { color: var(--accent-gold); font-family: var(--font-menu); font-size: 1.4rem; }
