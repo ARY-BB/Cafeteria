@@ -67,7 +67,11 @@
     filter: drop-shadow(5px 5px 15px rgba(0,0,0,0.3));
 }
 
-body { background-color: var(--bg-warm-coffee); color: white; }
+body { background-color: var(--bg-warm-coffee) ; color: white; }
+main{background-color: var(--bg-warm-coffee) !important; color: white;}
+#servicios1 #servicios{
+    background-color: var(--bg-warm-coffee) !important;
+}
 .menu-card {
     background-color: var(--bg-dark-chocolate);
     border: 1px solid rgba(230, 197, 125, 0.2);
@@ -103,4 +107,50 @@ body { background-color: var(--bg-warm-coffee); color: white; }
 .btn-order:hover {
     background-color: #d4af37;
     color: var(--bg-dark-chocolate);
+}
+
+.card {
+    background-color: var(--bg-dark-chocolate) !important;
+    border: 1px solid rgba(230, 197, 125, 0.2) !important;
+}
+.card-title {
+    color: var(--accent-gold) !important;
+}
+.card-text {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+.titles{
+    color: var(--accent-gold) !important;
+}
+.form-container {
+    background-color: var(--bg-dark-chocolate);
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 1px solid rgba(230, 197, 125, 0.1);
+}
+.form-control, .form-select {
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(230, 197, 125, 0.3);
+    color: white;
+}
+.form-control:focus, .form-select:focus {
+    background-color: rgba(255,255,255,0.1);
+    border-color: var(--accent-gold);
+    color: white;
+    box-shadow: 0 0 0 0.25px var(--accent-gold);
+}
+.btn-order {
+    background-color: var(--accent-gold);
+    color: var(--bg-dark-chocolate);
+    font-family: var(--font-menu);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.btn-order:hover {
+    background-color: #d4af37;
+    color: var(--bg-dark-chocolate);
+}
+input::placeholder{
+    color: white !important;
 }

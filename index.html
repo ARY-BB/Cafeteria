@@ -4,74 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <title>Sol y Luna - Cafeteria</title>
+</head>
     <body>
 
-     <header>
-         <h1>Sol y Luna</h1>
-         <p>La mejor cafeteria del estado</p>
-         <nav>
-             <ul>
-                 <li><a href="paginaDeContenido1.html">Menu</a></li>
-                 <li><a href="paginaDeContenido2.html">Pedidos</a></li>
-             </ul>
+         <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+             <div class="container">
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                     <ul class="navbar-nav gap-4 text-center">
+                         <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                         <li class="nav-item"><a class="nav-link active" href="paginaDeContenido1.html">MENU</a></li>
+                         <li class="nav-item"><a class="nav-link" href="paginaDeContenido2.html">PEDIDO</a></li>
+                     </ul>
+                 </div>
+             </div>
          </nav>
-     </header>
-  <main>
-      <section id="servicios" class="py-5">
-          <div class="container">
-              <h2 class="text-center mb-5 fw-bold text-success">Menu</h2>
-              <div class="row g-4">
+  <main style="background-color: var(--bg-warm-coffee)">
+      <section id="servicios1" class="py-5" style="background-color: var(--bg-warm-coffee)">
 
+              <div class="container">
+                  <h2 class="text-center mb-5 fw-bold text-success titles">Sol y Luna</h2>
 
-                  <div class="col-md-6">
-                      <div class="card h-100 border-0 shadow-sm text-center p-3">
-                          <div class="card-body">
-                              <i class="bi bi-shield-plus fs-1 text-success mb-3"></i>
-                              <h3 class="card-title h5">Origen</h3>
-                              <p class="card-text text-muted">nuestros productos, originarios de morelia una receta familir hecha por generaciones</p>
+                  <div class="row g-4 justify-content-center">
+
+                      <div class="col-md-6 col-lg-4">
+                          <div class="card h-100 border-0 shadow-sm bg-white text-center p-4 rounded-3">
+                              <div class="card-body d-flex flex-column align-items-center">
+                                  <div class="text-success mb-3">
+                                      <i class="bi bi-shield-plus fs-1"></i>
+                                  </div>
+                                  <h3 class="card-title h4 fw-semibold text-dark mb-3">Origen</h3>
+                                  <div class="mb-3 d-flex justify-content-center" style="max-width: 150px;">
+                                      <img src="assets/img/immorelia.jpg" alt="Morelia" class="img-fluid rounded">
+                                  </div>
+                                  <p class="card-text text-muted lh-base">
+                                      Nuestros productos, originarios de Morelia, siguen una receta familiar hecha por generaciones...
+                                  </p>
+                              </div>
                           </div>
                       </div>
-                  </div>
 
-                  <div class="col-md-6">
-                      <div class="card h-100 border-0 shadow-sm text-center p-3">
-                          <div class="card-body">
-                              <i class="bi bi-scissors fs-1 text-success mb-3"></i>
-                              <h3 class="card-title h5">Calidad</h3>
-                              <img src="assets/img/cafe.jpg" alt="" width="50%" height="50%">
-                              <p class="card-text text-muted">Productos 100% organicos, el cafe es 100% puro tostado a la perfeccion</p>
+                      <div class="col-md-6 col-lg-4">
+                          <div class="card h-100 border-0 shadow-sm bg-white text-center p-4 rounded-3">
+                              <div class="card-body d-flex flex-column align-items-center">
+                                  <div class="text-success mb-3">
+                                      <i class="bi bi-gem fs-1"></i> </div>
+                                  <h3 class="card-title h4 fw-semibold text-dark mb-3">Calidad</h3>
+                                  <div class="mb-3 d-flex justify-content-center" style="max-width: 150px;">
+                                      <img src="assets/img/cafe.jpg" alt="Calidad" class="img-fluid rounded"> </div>
+                                  <p class="card-text text-muted lh-base">
+                                      El café es 100% puro tostado a la perfección.
+                                  </p>
+                              </div>
                           </div>
                       </div>
-                  </div>
 
+                  </div>
               </div>
-          </div>
-      </section>
-      <section id="servicios" class="py-5">
+          </section>
+      <section id="servicios" class="py-5" style="background-color: var(--bg-warm-coffee)">
+
           <div class="container">
-              <h2 class="text-center mb-5 fw-bold text-success">Pedidos</h2>
-              <div class="row g-4">
+              <h2 class="text-center mb-5 fw-bold text-success titles">nuestros servicios</h2>
 
+              <div class="row g-4 justify-content-center">
 
-                  <div class="col-md-6">
-                      <div class="card h-100 border-0 shadow-sm text-center p-3">
-                          <div class="card-body">
-                              <i class="bi bi-shield-plus fs-1 text-success mb-3"></i>
-                              <h3 class="card-title h5">via terrenal</h3>
-                              <p class="card-text text-muted">contamos con un servicio agradable de transporte, lo llevamos hasta donde usted </p>
+                  <div class="col-md-6 col-lg-4">
+                      <div class="card h-100 border-0 shadow-sm bg-white text-center p-4 rounded-3">
+                          <div class="card-body d-flex flex-column align-items-center">
+                              <div class="text-success mb-3">
+                                  <i class="bi bi-shield-plus fs-1"></i>
+                              </div>
+                              <h3 class="card-title h4 fw-semibold text-dark mb-3">Origen</h3>
+                              <div class="mb-3 d-flex justify-content-center" style="max-width: 150px;">
+                                  <img src="assets/img/imcarro.jpg" alt="Morelia" class="img-fluid rounded">
+                              </div>
+                              <p class="card-text text-muted lh-base">
+                                  Nuestros productos, llevados hasta tu hogar, solo ordena y te lo entregamos
+                              </p>
                           </div>
                       </div>
                   </div>
 
-                  <div class="col-md-6">
-                      <div class="card h-100 border-0 shadow-sm text-center p-3">
-                          <div class="card-body">
-                              <i class="bi bi-scissors fs-1 text-success mb-3"></i>
-                              <h3 class="card-title h5">recojer en tienda</h3>
-                              <p class="card-text text-muted">puede recojer en tienda cuando se realize el pedido</p>
+                  <div class="col-md-6 col-lg-4">
+                      <div class="card h-100 border-0 shadow-sm bg-white text-center p-4 rounded-3">
+                          <div class="card-body d-flex flex-column align-items-center">
+                              <div class="text-success mb-3">
+                                  <i class="bi bi-gem fs-1"></i> </div>
+                              <h3 class="card-title h4 fw-semibold text-dark mb-3">Calidad</h3>
+                              <div class="mb-3 d-flex justify-content-center" style="max-width: 150px;">
+                                  <img src="assets/img/imcafeteria.avif" alt="Calidad" class="img-fluid rounded"> </div>
+                              <p class="card-text text-muted lh-base">
+                                  solo haz tu pedido y te lo tendremos listo, pasa por el a nuestras sucursales
+                              </p>
                           </div>
                       </div>
                   </div>
@@ -82,5 +111,4 @@
   </main>
      <script src="assets/js/bootstrap.js"></script>
 </body>
-</head>
 </html>
